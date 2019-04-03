@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import ToyHeader from './ToyHeader';
+import NewToyForm from './NewToyForm';
 import ToyCollection from './ToyCollection'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Toy Tale</h1>
+        <ToyHeader />
+        <NewToyForm />
         <ToyCollection />
       </div>
     )
