@@ -6,21 +6,21 @@ class NewToyForm extends Component {
     this.state = {
       name: "",
       image: ""
-    }
+    };
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value
-    })
-  }
+    });
+  };
 
   render() {
-    const display = this.props.display ? "block" : "none"
+    const display = this.props.display ? "block" : "none";
 
     return (
       <div className="container" style={{ display: display }}>
-        <form className="add-toy-form" onSubmit={this.props.handleSubmit} >
+        <form className="add-toy-form" onSubmit={this.props.handleSubmit}>
           <h3>Create a toy!</h3>
           <input
             type="text"
@@ -38,7 +38,7 @@ class NewToyForm extends Component {
             className="input-text"
             onChange={this.handleChange}
           />
-          <br/>
+          <br />
           <input
             type="submit"
             name="submit"

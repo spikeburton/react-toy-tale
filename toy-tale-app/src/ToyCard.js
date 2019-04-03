@@ -10,7 +10,6 @@ class ToyCard extends Component {
 
   handleClick = () => {
     const likes = this.state.likes;
-    console.log(likes);
     this.setState({
       likes: likes + 1
     });
