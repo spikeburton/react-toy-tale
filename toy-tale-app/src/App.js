@@ -21,9 +21,12 @@ class App extends Component {
     })
   }
 
-  handleNewToyForm = (e) => {
+  handleNewToyForm = (e, name, image) => {
     e.preventDefault();
     console.log("trying to add toy ...")
+    console.log(name)
+    console.log(image)
+    e.target.reset()
   }
 
   render() {

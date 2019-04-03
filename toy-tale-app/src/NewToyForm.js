@@ -15,12 +15,22 @@ class NewToyForm extends Component {
     });
   };
 
+  handleReset = () => {
+    this.setState({name: "", image: ""})
+  }
+
   render() {
     const display = this.props.display ? "block" : "none";
 
     return (
       <div className="container" style={{ display: display }}>
-        <form className="add-toy-form" onSubmit={this.props.handleSubmit}>
+        <form
+          className="add-toy-form"
+          onSubmit={e =>
+            this.props.handleSubmit(e, this.state.name, this.state.image)
+          }
+          onReset={this.handleReset}
+        >
           <h3>Create a toy!</h3>
           <input
             type="text"
