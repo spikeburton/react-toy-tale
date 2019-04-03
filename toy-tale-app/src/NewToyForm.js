@@ -16,8 +16,8 @@ class NewToyForm extends Component {
   };
 
   handleReset = () => {
-    this.setState({name: "", image: ""})
-  }
+    this.setState({ name: "", image: "" });
+  };
 
   render() {
     const display = this.props.display ? "block" : "none";
