@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ToyHeader from './ToyHeader';
 import NewToyForm from './NewToyForm';
+import AddToyButton from './AddToyButton';
 import ToyCollection from './ToyCollection'
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <div>
         <ToyHeader />
         <NewToyForm />
+        <AddToyButton />
         <ToyCollection />
       </div>
     )

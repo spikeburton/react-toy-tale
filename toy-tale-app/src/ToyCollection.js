@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './resources/toys'
-import { toys } from './resources/toys';
 import ToyCard from './ToyCard';
+
+import { toys } from './resources/toys';
 
 class ToyCollection extends Component {
   render() {
