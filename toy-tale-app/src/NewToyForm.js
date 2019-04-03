@@ -13,21 +13,21 @@ class NewToyForm extends Component {
             name="name"
             value=""
             placeholder="Enter a toy's name..."
-            class="input-text"
+            className="input-text"
           />
           <input
             type="text"
             name="image"
             value=""
             placeholder="Enter a toy's image URL..."
-            class="input-text"
+            className="input-text"
           />
           <br/>
           <input
             type="submit"
             name="submit"
             value="Create New Toy"
-            class="submit"
+            className="submit"
           />
         </form>
       </div>
