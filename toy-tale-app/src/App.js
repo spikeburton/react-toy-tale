@@ -5,11 +5,17 @@ import AddToyButton from './AddToyButton';
 import ToyCollection from './ToyCollection'
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      displayForm: false
+    }
+  }
   render() {
     return (
       <div>
         <ToyHeader />
-        <NewToyForm />
+        <NewToyForm display={this.state.displayForm} />
         <AddToyButton />
         <ToyCollection />
       </div>
