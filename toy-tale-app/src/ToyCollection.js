@@ -7,7 +7,6 @@ class ToyCollection extends Component {
   render() {
     return (
       <div id="toy-collection">
-        {/* <h1>Hello</h1> */}
         {toys.map(toy => <ToyCard key={toy.id} {...toy} />)}
       </div>
     )
