@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function AddToyButton() {
+export default function AddToyButton(props) {
   return (
-    <p style={{textAlign: "center"}}>
+    <p style={{ textAlign: "center" }}>
       {"Andy needs your help! "}
-      <button id="new-toy-btn">Add a new toy!</button>
+      <button id="new-toy-btn" onClick={props.handleClick}>
+        {"Add a new toy!"}
+      </button>
     </p>
-  )
+  );
 }

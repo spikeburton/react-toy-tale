@@ -2,8 +2,10 @@ import React, { Component } from "react";
 
 class NewToyForm extends Component {
   render() {
+    const display = this.props.display ? "block" : "none"
+
     return (
-      <div className="container" style={{ display: "block" }}>
+      <div className="container" style={{ display: display }}>
         <form className="add-toy-form">
           <h3>Create a toy!</h3>
           <input
